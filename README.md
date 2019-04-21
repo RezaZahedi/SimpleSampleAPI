@@ -18,8 +18,8 @@ This app uses a map as a database for simplicity. You can test the app with foll
 
 ```
 
-# Refrences
-- middleware stuff:
+# References
+- Middleware:
     * Philipp Tanlak   [Middleware (Basic)](https://gowebexamples.com/basic-middleware/)
     * Philipp Tanlak   [Middleware (Advanced)](https://gowebexamples.com/advanced-middleware/) 
 - Context:
@@ -27,7 +27,7 @@ This app uses a map as a database for simplicity. You can test the app with foll
 
 - Overall structure:
     * Sandeep Kalra    [git repo: mv-backend](https://github.com/sandeepkalra/mv-backend)
-- Overall Go Porgramming:
+- Overall Go Programming:
     * William Kennedy  [Ultimate Go Programming](https://www.oreilly.com/library/view/ultimate-go-programming/9780135261651/)
     * Todd McLeod      [Learn How To Code](https://www.udemy.com/course/learn-how-to-code/)
     * Todd McLeod      [Web Development with Google’s Go](https://www.udemy.com/go-programming-language/)

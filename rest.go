@@ -53,7 +53,7 @@ func (bf *BookFetcher) ReadOne(w http.ResponseWriter, r *http.Request) {
 	// curl localhost:8080/book/2
 }
 
-// CreateOne checks the book's ID, if it doesnt exist it adds it to the database and redirects to the "/books" URL.
+// CreateOne checks the book's ID, if it doesn't exist it adds it to the database and redirects to the "/books" URL.
 func (bf *BookFetcher) CreateOne(w http.ResponseWriter, r *http.Request) {
 	id, _ := r.Context().Value(ContextKeyID).(int) // error already checked in middlewares.go
 

@@ -57,10 +57,13 @@ func Chain(f http.HandlerFunc, middlewares ...Middleware) http.HandlerFunc {
 	return f
 }
 
-// urlParser takes the ULR's supposed length, the desired postion index and the type at that position.
+// urlParser takes the URL's supposed length, the desired postion index and the type at that position.
 func urlParser(sURL string, totLen, index int, isInt bool) (interface{}, error) {
 	wantStr := strings.Split(sURL, "/")
 	if len(wantStr) != totLen {
+		return 0, fmt.Errorf("Bad URL")
+	}
+	if index > totLen {
 		return 0, fmt.Errorf("Bad URL")
 	}
 
